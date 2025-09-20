@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.custom-navbar {
+    /* background-color: #EBF400 !important; */
+    background: linear-gradient(90deg, #A0D8EF, #EBF400);
+    padding: 10px;
+}
+
+.upperBody{
+    text-align: center;
+    margin: 100px auto;
+    width: fit-content;
+}
+.upperBody h1, p{
+    color: #EBF400;
+    margin: 10px 0;
+}
+.upperBody p{
+    color: #A0D8EF;
+}
+.upperBody button{
+    margin: 5px;
+    padding: 10px 20px;
+    color: black;
+    background : linear-gradient(90deg, #A0D8EF, #EBF400);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    gap: 1rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 60rem;
+}
+.card{
+    flex: 0 0 auto;
+    
+}

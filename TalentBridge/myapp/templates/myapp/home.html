@@ -1,23 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TalentBridge - connecting skills across people</title>
-    <style>
-        body{
+{% extends "myapp/layout/layout.html" %}
+{% load static %}
+{% block content %}
 
-            background:black;
-        }
-        h1,p{
-            color: #EBF400;
-            {% comment %} color: #00FFDE; {% endcomment %}
-        }
-    </style>
+<div class="upperBody">
+<h1>Exchange Time, Not Money</h1>
 
-</head>
-<body>
-    <h1>Exchange Time, Not Money</h1>
-    <p>Unlock knowledge by sharing your own. Teach, learn & grow</p>
-</body>
-</html>
+<p>Unlock knowledge by sharing your own. Teach, learn, & grow together.</p>
+
+<button>Join now</button>
+<button>Browse skills</button>
+</div>
+
+<div class="cards-container">
+    <div class="cards">
+        {% comment %} card1 {% endcomment %}
+        <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        {% comment %} card2 {% endcomment %}
+        <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        {% comment %} card3 {% endcomment %}
+        <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        {% comment %} card4 {% endcomment %}
+        <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        {% comment %} card5 {% endcomment %}
+        <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        {% comment %} cards ends {% endcomment %}
+    </div>
+</div>
+
+
+{% endblock content %}
