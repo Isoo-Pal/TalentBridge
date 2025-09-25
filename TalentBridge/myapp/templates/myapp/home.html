@@ -11,7 +11,7 @@
 <button>Browse skills</button>
 </div>
 
-<div class="container text-center cards-wrapper">
+{% comment %} <div class="container text-center cards-wrapper">
   <div class="row justify-content-center">
     
     <div class="col-md-3">
@@ -48,7 +48,32 @@
     </div>
 
   </div>
-</div>
+</div> {% endcomment %}
 
+<div class="workingSection">
+  <h1>How It Works?</h1>
+
+  <div class="row justify-content-center workingImages">
+      <div class="col-md-3" style="width:18rem">
+        <img src="{% static 'images/icons/giftBox.png' %}" alt="gift box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusamus neque officia distinctio soluta officiis dolorem ut obcaecati provident illum iure, nostrum voluptate!</p>
+    </div>
+
+    <div class="col-md-3" style="width:18rem">
+      
+        <img src="{% static 'images/icons/giftBox.png' %}" alt="gift box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusamus neque officia distinctio soluta officiis dolorem ut obcaecati provident illum iure, nostrum voluptate!</p>
+      
+    </div>
+
+    <div class="col-md-3" style="width:18rem">
+      
+        <img src="{% static 'images/icons/giftBox.png' %}" alt="gift box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In accusamus neque officia distinctio soluta officiis dolorem ut obcaecati provident illum iure, nostrum voluptate!</p>
+      
+    </div>
+  </div>
+
+</div>
 
 {% endblock content %}
