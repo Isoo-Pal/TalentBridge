@@ -3,10 +3,12 @@ body{
 }
 
 h1, h2, h3 {
+  color: #EBF400;
   font-family: 'Montserrat', sans-serif;
 }
 
 p {
+   color: #A0D8EF;
   font-family: 'Open Sans', sans-serif;
 }
 button {
@@ -26,7 +28,7 @@ button {
     margin: 100px auto;
     width: fit-content;
 }
-.upperBody h1, p{
+.upperBody h1{
     color: #EBF400;
     margin: 10px 0;
 }
@@ -38,16 +40,84 @@ button {
     padding: 10px 20px;
     color: black;
     background : linear-gradient(90deg, #A0D8EF, #EBF400);
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+}
+.upperBody button:hover{
+  transform: scale(1.05); 
 }
 
 /* .card-img-top{
   border-radius: 5px;
 } */
 
-.workingSection{
+.workingHeadings{
+  color: #b9cdd5;
+}
+.howitWorks{
+  margin: 0 auto;
   width: 80%;
-  align-items: center;
-  border: 5px solid #A0D8EF
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid green; */
+}
+
+.workingbox1,
+.workingbox3,
+.workingbox2 {
+  width: 45%;
+  align-self: flex-end;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 12px;
+  background: linear-gradient(#000, #000) padding-box,
+                linear-gradient(45deg, #A0D8EF, #EBF400) border-box;
+  border: 2px solid transparent;
+
+  color: #fff; /* text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+} 
+.workingbox1:hover,
+.workingbox2:hover,
+.workingbox3:hover {
+ transform: scale(1.05); 
+}
+
+.workingbox1:hover h3,
+.workingbox2:hover h3,
+.workingbox3:hover h3 {
+  color: #EBF400; /* text color changes on hover */
+  text-shadow: 0 0 5px #A0D8EF, 0 0 10px #EBF400; /* neon glow */
+}
+
+.workingbox2{
+  align-self: flex-start;
+  
+}
+
+.workingParas{
+  padding: 10px;
+  color: #fff;
+}
+.workingImage{
+  padding: 10px;
+  width: 20%;
+  height: 10%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.workingImage:hover{
+  transform: scale(1.2) rotate(7deg);  /* slightly enlarge and rotate */
+  filter: drop-shadow(0 0 5px #A0D8EF) drop-shadow(0 0 5px #EBF400); /* neon glow */
+}
+.workingButtons{
+  margin-bottom: 10px;
+  padding: 7px;
+  color: black;
+  background : linear-gradient(90deg, #A0D8EF, #EBF400);
+  border-radius: 8px;
+  cursor: pointer;    
+}
+.workingButtons:hover{
+  transform: scale(1.05); 
+  text-shadow: 0 0 5px #A0D8EF, 0 0 10px #EBF400;
 }

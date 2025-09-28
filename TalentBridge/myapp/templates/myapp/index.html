@@ -1,0 +1,39 @@
+{% extends "myapp/layout/layout.html" %}
+{% load static %}
+{% block content %}
+
+<div class="upperBody">
+<h1>Exchange Time, Not Money</h1>
+
+<p style = "margin: 10px 0;">Unlock knowledge by sharing your own. Teach, learn, & grow together.</p>
+
+<button>Join now</button>
+<button>Browse skills</button>
+</div>
+
+<div class="howitWorks">
+  <div class="HeadOfWorking">
+    <h1>How It Works?</h1>
+    <p class="workingParas">Swap your knowledge for new experiences in just 3 simple steps.</p>
+  </div>
+  <div class = "workingbox1">
+    <img src="{% static 'images/icons/giftBox.png' %}" alt="" class="workingImage">
+    <h3 class="workingHeadings">Sign Up & Get Credits</h3>
+    <p class="workingParas">Create your free account in just a few clicks and start your journey. As a welcome gift, you’ll receive credits that let you explore and learn new skills right away.</p>
+    <button class = "workingButtons">Sign Up Now</button>
+  </div>
+  <div class = "workingbox2">
+    <img src="{% static 'images/icons/openBook.png' %}" alt="" class="workingImage">
+    <h3 class="workingHeadings">Offer a Skill</h3>
+    <p class="workingParas">Share your knowledge with the community by teaching a skill you’re good at. Earn credits for every session you conduct, build your profile, and help others grow.</p>
+    <button type="submit" class = "workingButtons">Become a Mentor</button>
+  </div>
+  <div class = "workingbox3">
+    <img src="{% static 'images/icons/key.png' %}" alt="" class="workingImage">
+    <h3 class="workingHeadings">Learn New Skills</h3>
+    <p class="workingParas">Use the credits you earn (or receive as a welcome gift) to learn from other talented members. Discover new hobbies, improve professional skills, and unlock opportunities without spending money.</p>
+    <button type="submit" class = "workingButtons">Browse Skills</button>
+  </div>
+</div>
+
+{% endblock content %}
