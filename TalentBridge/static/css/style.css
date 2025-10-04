@@ -113,11 +113,23 @@ button {
   margin-bottom: 10px;
   padding: 7px;
   color: black;
+  border-radius: 25px;
   background : linear-gradient(90deg, #A0D8EF, #EBF400);
-  border-radius: 8px;
   cursor: pointer;    
 }
 .workingButtons:hover{
   transform: scale(1.05); 
   text-shadow: 0 0 5px #A0D8EF, 0 0 10px #EBF400;
+}
+
+
+.featuredSectioncard1:hover,
+.featuredSectioncard2:hover,
+.featuredSectioncard3:hover,
+.featuredSectioncard4:hover
+{
+   transform: scale(1.08);
+      background-color: #1a1a1a;
+      box-shadow: 0 0 25px #EBF40088;
+      border-color: #EBF400;
 }
