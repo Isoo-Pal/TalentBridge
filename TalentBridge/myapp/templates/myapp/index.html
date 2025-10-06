@@ -20,19 +20,19 @@
     <img src="{% static 'images/icons/giftBox.png' %}" alt="" class="workingImage">
     <h3 class="workingHeadings">Sign Up & Get Credits</h3>
     <p class="workingParas">Create your free account in just a few clicks and start your journey. As a welcome gift, you’ll receive credits that let you explore and learn new skills right away.</p>
-    <button class = "workingButtons">Sign Up Now</button>
+    <a href="#" class = "workingButtons btn mt-3 px-4 text-dark fw-bold">Sign Up Now</a>
   </div>
   <div class = "workingbox2">
     <img src="{% static 'images/icons/openBook.png' %}" alt="" class="workingImage">
     <h3 class="workingHeadings">Offer a Skill</h3>
     <p class="workingParas">Share your knowledge with the community by teaching a skill you’re good at. Earn credits for every session you conduct, build your profile, and help others grow.</p>
-    <button type="submit" class = "workingButtons">Become a Mentor</button>
+    <a href="#" class = "workingButtons btn mt-3 px-4 text-dark fw-bold">Become a Mentor</a>
   </div>
   <div class = "workingbox3">
     <img src="{% static 'images/icons/key.png' %}" alt="" class="workingImage">
     <h3 class="workingHeadings">Learn New Skills</h3>
     <p class="workingParas">Use the credits you earn (or receive as a welcome gift) to learn from other talented members. Discover new hobbies, improve professional skills, and unlock opportunities without spending money.</p>
-    <button type="submit" class = "workingButtons">Browse Skills</button>
+    <a href="#" class = "workingButtons btn mt-3 px-4 text-dark fw-bold">Browse Skills</a>
   </div>
 </div>
 
@@ -41,8 +41,8 @@
 <!-- Featured Skills Section (Dark Mode) -->
 <section class="py-5 " style="background-color: black;">
   <div class="container text-center">
-    <h2 class=" mb-3" style="color: #EBF400; margin-top: 50px;">Featured Skills</h2>
-    <p class="mb-5" style="color: #cfcfcf;">
+    <h1 class=" mb-3" style="color: #EBF400; margin-top: 50px;">Featured Skills</h1>
+    <p class="mb-5" style="color: #A0D8EF;">
       From coding to cooking, explore a world of skills shared by real people like you.
     </p>
 
@@ -53,7 +53,7 @@
           <div class="card-body ">
             <div class="display-4 mb-3" style="color: #EBF400;">🎸</div>
             <h5 class="card-title fw-semibold" style="color: #A0D8EF;">Guitar Basics</h5>
-            <p class="card-text small" style="color: #ccc;">
+            <p class="card-text" style="color: #ccc;">
               Learn to play your favorite tunes step by step.
             </p>
             <a href="#" class="btn mt-3 px-4 text-dark fw-semibold"
@@ -68,7 +68,7 @@
           <div class="card-body">
             <div class="display-4 mb-3" style="color: #EBF400;">🖌️</div>
             <h5 class="card-title fw-semibold" style="color: #A0D8EF;">Digital Art</h5>
-            <p class="card-text small" style="color: #ccc;">
+            <p class="card-text" style="color: #ccc;">
               Unleash your creativity with digital painting techniques.
             </p>
             <a href="#" class="btn mt-3 px-4 text-dark fw-semibold"
@@ -83,7 +83,7 @@
           <div class="card-body">
             <div class="display-4 mb-3" style="color: #EBF400;">💻</div>
             <h5 class="card-title fw-semibold" style="color: #A0D8EF;">Python Programming</h5>
-            <p class="card-text small" style="color: #ccc;">
+            <p class="card-text" style="color: #ccc;">
               Build logic, solve problems, and automate your world.
             </p>
             <a href="#" class="btn mt-3 px-4 text-dark fw-semibold"
@@ -110,5 +110,59 @@
   </div>
 </section>
 
+
+{% comment %} community section {% endcomment %}
+ <div class="container my-5">
+    <div class="p-5 text-center trust-section shadow-lg">
+      <h1 class="mb-3 style="color:"#EBF400">Community & Trust</h1>
+      <p class=" text-info mb-5">
+        “Every exchange is powered by credits, reviews, and trust — making learning safe and rewarding.”
+      </p>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card communitySection bg-dark text-light h-100 border border-info text-center p-3">
+            <div class="trust-icon mb-3">⭐</div>
+            <h5 class="" style="color:#A0D8EF;">Verified Reviews</h5>
+            <p class="" style="color: #ccc;">
+              Every interaction is rated, ensuring authenticity and reliability in the community.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card communitySection bg-dark text-light h-100 border border-info text-center p-3">
+            <div class="trust-icon mb-3">🛡️</div>
+            <h5 class="" style="color:#A0D8EF;">Secure Credits</h5>
+            <p class="" style="color: #ccc;">
+              Our credit system guarantees fair exchanges — no money, just pure skill sharing.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card communitySection bg-dark text-light h-100 border border-info text-center p-3">
+            <div class="trust-icon mb-3">🤝</div>
+            <h5 class="" style="color:#A0D8EF;">Trusted Community</h5>
+            <p class="" style="color: #ccc;">
+              Connect with verified users who share your passion for learning and growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card communitySection bg-dark text-light h-100 border border-info text-center p-3">
+            <div class="trust-icon mb-3">💬</div>
+            <h5 class="" style="color:#A0D8EF;">Transparent Feedback</h5>
+            <p class="" style="color: #ccc;">
+              Users can share honest feedback to maintain a transparent learning environment.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 {% endblock content %}

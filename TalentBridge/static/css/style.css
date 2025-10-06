@@ -10,6 +10,7 @@ h1, h2, h3 {
 p {
    color: #A0D8EF;
   font-family: 'Open Sans', sans-serif;
+  font-size: medium;
 }
 button {
   font-family: 'Raleway', sans-serif;
@@ -128,8 +129,19 @@ button {
 .featuredSectioncard3:hover,
 .featuredSectioncard4:hover
 {
-   transform: scale(1.08);
-      background-color: #1a1a1a;
-      box-shadow: 0 0 25px #EBF40088;
-      border-color: #EBF400;
+  transform: scale(1.08);
+  background-color: #1a1a1a;
+  box-shadow: 0 0 25px #EBF40088;
+  border-color: #EBF400;
+}
+
+.trust-icon {
+  font-size: 2.5rem;
+  color: #EBF400;
+}
+
+.communitySection:hover{
+  transform: scale(1.08);
+  background-color: #1a1a1a;
+  box-shadow: 0 0 25px #EBF40088;
 }
