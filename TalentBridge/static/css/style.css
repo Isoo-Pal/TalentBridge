@@ -145,3 +145,46 @@ button {
   background-color: #1a1a1a;
   box-shadow: 0 0 25px #EBF40088;
 }
+
+.btn-warning {
+    background: linear-gradient(90deg, #A0D8EF, #EBF400) !important;
+    border: none !important;
+    color: #000 !important;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-warning:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(235, 244, 0, 0.5);
+  }
+
+.btn-outline-warning {
+    position: relative;
+    color: #EBF400 !important;
+    border: 2px solid transparent !important;
+    background: linear-gradient(#0a0a0a, #0a0a0a) padding-box,
+                linear-gradient(90deg, #A0D8EF, #EBF400) border-box;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-outline-warning:hover {
+    background: linear-gradient(90deg, #A0D8EF, #EBF400) !important;
+    color: #000 !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 10px rgba(235, 244, 0, 0.5);
+    transform: scale(1.05);
+  }
+
+.text-warning{
+  color: #EBF400 !important;
+}
+
+.border-top {
+    border-top: 4px solid;
+    border-image: linear-gradient(90deg, #A0D8EF, #EBF400) 1;
+}
+
+.text-info{
+  color: #fff !important;
+}
