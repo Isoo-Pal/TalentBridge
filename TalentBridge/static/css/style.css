@@ -36,17 +36,9 @@ button {
 .upperBody p{
     color: #A0D8EF;
 }
-.upperBody button{
-    margin: 5px;
-    padding: 10px 20px;
-    color: black;
-    background : linear-gradient(90deg, #A0D8EF, #EBF400);
-    border-radius: 8px;
-    cursor: pointer;
-}
-.upperBody button:hover{
+/* .upperBody button:hover{
   transform: scale(1.05); 
-}
+} */
 
 /* .card-img-top{
   border-radius: 5px;

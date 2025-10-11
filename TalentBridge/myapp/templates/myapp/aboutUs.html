@@ -1,0 +1,60 @@
+{% extends "myapp/layout/layout.html" %}
+{% load static %}
+{% block content %}
+
+<section class="py-5 text-center text-light" style="background-color: #121212;">
+  <div class="container">
+
+    <!-- Vision & Mission -->
+    <h1 class=" mb-4" style="color: #EBF400;">Our Vision & Mission</h1>
+    <p class=" mx-auto" style="max-width: 800px; color:#fff;">
+      At <span style="color: #A0D8EF;">SkillSwap</span>, our mission is to make learning accessible for everyone — 
+      not through money, but through skills. We believe in the power of sharing knowledge 
+      and creating a global community where learning is based on trust, passion, and exchange.
+    </p>
+
+    <!-- Story -->
+    <div class="my-5">
+      <h3 class=" mb-3" style="color: #EBF400;">Our Story</h3>
+      <p class="mx-auto" style="max-width: 800px;color:#fff;">
+        It started with a simple idea — what if everyone could teach something and learn something 
+        in return? From that thought, <span style="color: #A0D8EF;">SkillSwap</span> was born: 
+        a platform where your skills are your currency. Whether it’s coding, cooking, or communication, 
+        you have something valuable to offer.
+      </p>
+    </div>
+
+    <!-- Team Section -->
+    <div class="my-5">
+      <h3 class=" mb-4" style="color: #EBF400;">Meet the Team</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark border-0 shadow text-light">
+            <img src="{% static 'images/profile.jpg' %}" class="card-img-top rounded-top" alt="Team Member" style="max-height: 250px; width: 100%; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #EBF400;">Isoo Pal</h5>
+              <p class="card-text">Founder & Developer</p>
+              <p class="small text-secondary">Driven by curiosity, powered by creativity.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark border-0 shadow text-light">
+            <img src="{% static 'images/profile.jpg' %}" class="card-img-top rounded-top" alt="Team Member" style="max-height: 250px; width: 100%; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #EBF400;">Isoo Pal</h5>
+              <p class="card-text">Designer & Developer</p>
+              <p class="small text-secondary">Designing experiences that inspire learning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+{% endblock content %}
