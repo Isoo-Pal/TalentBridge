@@ -1,0 +1,82 @@
+{% extends "myapp/layout/layout.html" %}
+{% load static %}
+{% block content %}
+
+<section class="py-5 text-light" style="background-color: #121212;">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4" style="color: #EBF400;">Explore Skills Marketplace</h2>
+    <p class="text-center text-info mb-5">
+      "Discover talents, share your knowledge, and connect with people eager to learn".
+    </p>
+
+    <!-- Search and Filter -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 col-lg-5 mb-3">
+        <input type="text" class="form-control bg-dark text-light border-0 shadow-sm" placeholder="Search skills...">
+      </div>
+      <div class="col-md-3 col-lg-2 mb-3">
+        <select class="form-select bg-dark text-light border-0 shadow-sm">
+          <option selected>All Categories</option>
+          <option>Technology</option>
+          <option>Music</option>
+          <option>Design</option>
+          <option>Languages</option>
+          <option>Cooking</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Skills Cards -->
+    <div class="row g-4">
+
+      <div class="col-md-4 col-lg-3">
+        <div class="card bg-dark border-0 shadow-sm h-100 featuredSectioncard1 ">
+          <img src="{% static 'images/pythonlogo.jpg' %}" class="card-img-top" alt="Python Programming" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: #A0D8EF">Python Programming</h5>
+            <p class="card-text " style="color: #ccc">Learn Python from scratch and build real-world projects with guidance from experts.</p>
+            <a href="#" class="btn btn-outline-warning btn-sm fw-semibold">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3">
+        <div class="card bg-dark border-0 shadow-sm h-100 featuredSectioncard2">
+          <img src="{% static 'images/digital-art.jpg' %}" class="card-img-top" alt="Digital Art" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: #A0D8EF">Digital Art</h5>
+            <p class="card-text" style="color: #ccc">Master digital illustration and learn to create stunning visuals with simple tools.</p>
+            <a href="#" class="btn btn-outline-warning btn-sm fw-semibold">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3">
+        <div class="card bg-dark border-0 shadow-sm h-100 featuredSectioncard3">
+          <img src="{% static 'images/public speaking.jpg' %}" class="card-img-top" alt="Public Speaking" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: #A0D8EF">Public Speaking</h5>
+            <p class="card-text " style="color: #ccc">Boost your confidence and presentation skills with interactive speaking sessions.</p>
+            <a href="#" class="btn btn-outline-warning btn-sm fw-semibold">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3">
+        <div class="card bg-dark border-0 shadow-sm h-100 featuredSectioncard4">
+          <img src="{% static 'images/guitar.jpg' %}" class="card-img-top" alt="Guitar Basics" style="height:200px; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3" style="color: #A0D8EF">Guitar Basics</h5>
+            <p class="card-text" style="color: #ccc">Learn to play guitar chords, melodies, and songs from passionate musicians.</p>
+            <a href="#" class="btn btn-outline-warning btn-sm fw-semibold">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+{% endblock content %}

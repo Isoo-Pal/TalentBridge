@@ -10,3 +10,7 @@ def aboutUs(request):
 
 def HowItWorks(request):
     return render(request, "myapp/howItWorks.html")
+
+
+def skillMarketPlace(request):
+    return render(request, "myapp/skillMarketplace.html")
