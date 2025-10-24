@@ -113,6 +113,7 @@ button {
 .workingButtons:hover{
   transform: scale(1.05); 
   text-shadow: 0 0 5px #A0D8EF, 0 0 10px #EBF400;
+  
 }
 
 
