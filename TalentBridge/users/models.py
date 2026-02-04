@@ -8,7 +8,7 @@ class UserProfile(models.Model):
     phone = models.CharField(max_length=15)
     address = models.TextField()
     country = CountryField(blank_label = 'Select Country')
-    state = models.CharField(max_length=100, blank=true)
+    state = models.CharField(max_length=100, blank=True)
     city = models.CharField(max_length=100)
     zip = models.IntegerField()
     userType = models.CharField(max_length=100)

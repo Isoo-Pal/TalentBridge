@@ -3,3 +3,7 @@ from django.contrib.auth.models import User
 from .models import UserProfile
 from django_countries.widgets import CountrySelectWidget
 
+class UserForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = "__all__"
