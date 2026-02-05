@@ -124,8 +124,8 @@ button {
 {
   transform: scale(1.08);
   background-color: #1a1a1a;
-  box-shadow: 0 0 25px #EBF40088;
-  border-color: #EBF400;
+  box-shadow: 0 0 25px #EBF40088 !important;
+  border-color: linear-gradient(90deg, #A0D8EF, #EBF400) !important;
 }
 
 .trust-icon {
@@ -180,4 +180,25 @@ button {
 
 .text-info{
   color: #fff !important;
+}
+
+/* Registration form */
+
+.regFormInput{
+  color : #A0D8EF
+}
+
+.gradient-input {
+    background:
+        linear-gradient(#0a0a0a, #0a0a0a) padding-box,
+        linear-gradient(90deg, #A0D8EF, #EBF400) border-box;
+
+    border: 1px solid transparent !important;
+    border-radius: 12px; /* Bootstrap default */
+    padding: 10px;
+}
+
+.gradient-input:focus {
+    box-shadow: none;
+    outline: none;
 }
