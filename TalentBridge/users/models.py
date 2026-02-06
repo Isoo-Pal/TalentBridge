@@ -7,7 +7,7 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     phone = models.CharField(max_length=15)
     address = models.TextField()
-    country = CountryField(blank_label = 'Select Country')
+    country = CountryField()
     state = models.CharField(max_length=100, blank=True)
     city = models.CharField(max_length=100)
     zip = models.IntegerField()

@@ -195,10 +195,26 @@ button {
 
     border: 1px solid transparent !important;
     border-radius: 12px; /* Bootstrap default */
-    padding: 10px;
+    padding: 8px;
+    
 }
 
 .gradient-input:focus {
     box-shadow: none;
     outline: none;
+}
+
+.gradient-input::placeholder{
+  color: #d1caca;
+  font-size: small;
+  
+}
+.gradient-input:focus::placeholder {
+    opacity: 0.4;
+}
+
+select.gradient-input option {
+    background: #212529;   /* dark */
+    color: #d1caca;
+    font-size: medium;
 }

@@ -3,14 +3,38 @@
 {% block content %}
 
 <div class="min-vh-100 d-flex align-items-center justify-content-center" >
-    <div class="col-md-5 col-lg-4 p-4 rounded-4 shadow-lg featuredSectioncard1" >
+    <div class="col-md-5 col-lg-4 p-4 rounded-4 shadow-lg featuredSectioncard1" style="background-color:#1a1a1a" >
         <form>
-            <div class="mb-3">
-                <label for="user" class="form-label regFormInput fw-semibold">Username</label>
-                <input type="text" class="form-control" id="user" >
+            <div class="mb-3 row">
+                <label for="user" class="form-label regFormInput fw-semibold col-sm-3">Username:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control gradient-input text-light" id="user" placeholder="e.g. Joey, Monica etc." >
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label regFormInput fw-semibold">Password</label>
+            <div class="mb-3 row">
+                <label for="phone" class="form-label regFormInput fw-semibold col-sm-3">Phone:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control gradient-input text-light" id="phone" placeholder="e.g. 1234567890 etc." >
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="address" class="form-label regFormInput fw-semibold col-sm-3">Address:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control gradient-input text-light" id="address" placeholder="e.g. Kanpur, Lucknow etc." >
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="country" class="form-label regFormInput fw-semibold col-sm-3">Country:</label>
+                <div class="col-sm-9">
+                    <select name="country" id="country" class="form-control gradient-input text-light">
+                        <option value={{ form.country }}></option>
+                    </select>
+                    
+                    {% comment %} <input type="text" class="form-control gradient-input text-light" id="country" placeholder="e.g. Joey, Monica etc." > {% endcomment %}
+                </div>
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleInputPassword1" class="form-label regFormInput fw-semibold ">Password</label>
                 <input type="password" class="form-control gradient-input text-light" id="exampleInputPassword1">
             </div>
             <div class="mb-3 form-check">
