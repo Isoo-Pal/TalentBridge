@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<div class="min-vh-100 d-flex align-items-center justify-content-center" >
+<div class="min-vh-100 d-flex align-items-center justify-content-center m-5" >
     <div class="col-md-5 col-lg-4 p-4 rounded-4 shadow-lg featuredSectioncard1" style="background-color:#1a1a1a" >
         <form>
             <div class="mb-3 row">
-                <label for="user" class="form-label regFormInput fw-semibold col-sm-3">Username:</label>
+                <label for="username" class="form-label regFormInput fw-semibold col-sm-3" required>Username:</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control gradient-input text-light" id="user" placeholder="e.g. Joey, Monica etc." >
+                    <input type="text" class="form-control gradient-input text-light" id="username" name="username" placeholder="e.g. Joey, Monica etc." >
                 </div>
             </div>
             <div class="mb-3 row">
@@ -20,17 +20,44 @@
             <div class="mb-3 row">
                 <label for="address" class="form-label regFormInput fw-semibold col-sm-3">Address:</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control gradient-input text-light" id="address" placeholder="e.g. Kanpur, Lucknow etc." >
+                    <input type="text" class="form-control gradient-input text-light" id="address" placeholder="e.g. 12/78 C-Block Kanpur etc." >
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="country" class="form-label regFormInput fw-semibold col-sm-3">Country:</label>
                 <div class="col-sm-9">
                     <select name="country" id="country" class="form-control gradient-input text-light">
-                        <option value={{ form.country }}></option>
+                        {% comment %} <option value="" disabled selected hidden>---Select Country---</option> {% endcomment %}
+                        <option value={{ profile_form.country }}></option>
                     </select>
-                    
-                    {% comment %} <input type="text" class="form-control gradient-input text-light" id="country" placeholder="e.g. Joey, Monica etc." > {% endcomment %}
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="city" class="form-label regFormInput fw-semibold col-sm-3">City:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control gradient-input text-light" id="city" placeholder="e.g. Kanpur, Lucknow etc." >
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="zip" class="form-label regFormInput fw-semibold col-sm-3">Zip code:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control gradient-input text-light" id="zip" placeholder="e.g. 209304, 780321 etc." >
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="userType" class="form-label regFormInput fw-semibold col-sm-3">User Type:</label>
+                <div class="col-sm-9">
+                    <select name="userType" id="userType" class="form-control gradient-input text-light">
+                        <option value="" disabled selected hidden>---------</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Faculty</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="skills" class="form-label regFormInput fw-semibold col-sm-3">Skills:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control gradient-input text-light" id="skills" placeholder="e.g. Coding, communication etc." >
                 </div>
             </div>
             <div class="mb-3 ">
