@@ -219,3 +219,37 @@ select.gradient-input option {
     font-size: medium;
 }
 
+/* success msg alert css */
+.custom-msg {
+    /* display: inline-block;      Only take required width */
+    padding: 12px 20px;
+    float: right;
+    border-radius: 8px;
+    font-weight: 500;
+    animation: fadeOut 0.5s ease forwards;
+    animation-delay: 3s;        /* Disappear after 3 sec */
+}
+
+/* Success style */
+.alert-success {
+    background-color: #09da39;
+    color: white;
+}
+
+.alert-error {
+    background-color: #da0909;
+    color: white;
+}
+
+.alert-warning {
+    background-color: #eb7f1a;
+    color: white;
+}
+
+/* Optional fade animation */
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}

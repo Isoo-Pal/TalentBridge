@@ -2,6 +2,16 @@
 
 {% block content %}
 
+<div class="text-center mt-3 mx-5">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="custom-msg alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+
 <div class="min-vh-100 d-flex align-items-center justify-content-center m-5" >
     <div class="col-md-5 col-lg-4 p-4 rounded-4 shadow-lg featuredSectioncard1" style="background-color:#1a1a1a" >
         <form method="post">
@@ -11,24 +21,48 @@
                 <div class="col-sm-9">
                     <input type="text" class="form-control gradient-input text-light" id="username" name="username" placeholder="e.g. Joey, Monica etc." >
                 </div>
+                {% if user_form.username.errors %}
+                    <div class="text-denger">
+                        {{ user_form.username.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="email" class="form-label regFormInput fw-semibold col-sm-3" required>Email:</label>
                 <div class="col-sm-9">
                     <input type="email" class="form-control gradient-input text-light" id="email" name="email" placeholder="e.g. joey@google.in, etc." >
                 </div>
+                {% if user_form.email.errors %}
+                    <div class="text-denger">
+                        {{ user_form.email.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="phone" class="form-label regFormInput fw-semibold col-sm-3">Phone:</label>
                 <div class="col-sm-9">
                     <input type="text" class="form-control gradient-input text-light" id="phone" placeholder="e.g. 1234567890 etc." name="phone" >
                 </div>
+                {% if profile_form.phone.errors %}
+                    <div class="text-denger">
+                        {{ profile_form.phone.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="address" class="form-label regFormInput fw-semibold col-sm-3">Address:</label>
                 <div class="col-sm-9">
                     <input type="text" class="form-control gradient-input text-light" id="address" name="address" placeholder="e.g. 12/78 C-Block Kanpur etc." >
                 </div>
+                {% if profile_form.address.errors %}
+                    <div class="text-denger">
+                        {{ profile_form.address.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="country" class="form-label regFormInput fw-semibold col-sm-3">Country:</label>
@@ -38,18 +72,36 @@
                         <option value={{ profile_form.country }}></option>
                     </select>
                 </div>
+                {% if profile_form.country.errors %}
+                    <div class="text-denger">
+                        {{ profile_form.country.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="city" class="form-label regFormInput fw-semibold col-sm-3">City:</label>
                 <div class="col-sm-9">
                     <input type="text" class="form-control gradient-input text-light" name="city" id="city" placeholder="e.g. Kanpur, Lucknow etc." >
                 </div>
+                {% if profile_form.city.errors %}
+                    <div class="text-denger">
+                        {{ profile_form.city.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="zip" class="form-label regFormInput fw-semibold col-sm-3">Zip code:</label>
                 <div class="col-sm-9">
                     <input type="text" class="form-control gradient-input text-light" name="zip" id="zip" placeholder="e.g. 209304, 780321 etc." >
                 </div>
+                {% if profile_form.zip.errors %}
+                    <div class="text-denger">
+                        {{ profile_form.zip.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="userType" class="form-label regFormInput fw-semibold col-sm-3">User Type:</label>
@@ -60,24 +112,48 @@
                         <option value="teacher">Faculty</option>
                     </select>
                 </div>
+                {% if profile_form.userType.errors %}
+                    <div class="text-denger">
+                        {{ profile_form.userType.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="skills" class="form-label regFormInput fw-semibold col-sm-3">Skills:</label>
                 <div class="col-sm-9">
                     <input type="text" class="form-control gradient-input text-light" name="skills" id="skills" placeholder="e.g. Coding, communication etc." >
                 </div>
+                {% if profile_form.skills.errors %}
+                    <div class="text-denger">
+                        {{ profile_form.skills.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="password1" class="form-label regFormInput fw-semibold col-sm-3">Password:</label>
                 <div class="col-sm-9">
                     <input type="password" class="form-control gradient-input text-light" id="password1" name="password1">
                 </div>
+                {% if profile_form.password1.errors %}
+                    <div class="text-denger">
+                        {{ profile_form.password1.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="mb-3 row">
                 <label for="password2" class="form-label regFormInput fw-semibold col-sm-3">Confirm Password:</label>
                 <div class="col-sm-9">
                     <input type="password" class="form-control gradient-input text-light" id="password2" name="password2">
                 </div>
+                {% if profile_form.password2.errors %}
+                    <div class="text-denger">
+                        {{ profile_form.password2.errors.0 }}
+                    </div>
+                
+                {% endif %}
             </div>
             <div class="text-center">
                 <button type="submit" class="btn-outline-warning fw-semibold px-5 py-2 form-control w-auto d-inline-block">Sign Up</button>
@@ -88,5 +164,8 @@
         </div>
     </div>
 </div>
+
+
+
 
 {% endblock content %}
