@@ -22,7 +22,7 @@
                     <input type="text" class="form-control gradient-input text-light" id="username" name="username" placeholder="e.g. Joey, Monica etc." >
                 </div>
                 {% if user_form.username.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ user_form.username.errors.0 }}
                     </div>
                 
@@ -34,7 +34,7 @@
                     <input type="email" class="form-control gradient-input text-light" id="email" name="email" placeholder="e.g. joey@google.in, etc." >
                 </div>
                 {% if user_form.email.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ user_form.email.errors.0 }}
                     </div>
                 
@@ -46,7 +46,7 @@
                     <input type="text" class="form-control gradient-input text-light" id="phone" placeholder="e.g. 1234567890 etc." name="phone" >
                 </div>
                 {% if profile_form.phone.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ profile_form.phone.errors.0 }}
                     </div>
                 
@@ -58,7 +58,7 @@
                     <input type="text" class="form-control gradient-input text-light" id="address" name="address" placeholder="e.g. 12/78 C-Block Kanpur etc." >
                 </div>
                 {% if profile_form.address.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ profile_form.address.errors.0 }}
                     </div>
                 
@@ -73,7 +73,7 @@
                     </select>
                 </div>
                 {% if profile_form.country.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ profile_form.country.errors.0 }}
                     </div>
                 
@@ -85,7 +85,7 @@
                     <input type="text" class="form-control gradient-input text-light" name="city" id="city" placeholder="e.g. Kanpur, Lucknow etc." >
                 </div>
                 {% if profile_form.city.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ profile_form.city.errors.0 }}
                     </div>
                 
@@ -97,7 +97,7 @@
                     <input type="text" class="form-control gradient-input text-light" name="zip" id="zip" placeholder="e.g. 209304, 780321 etc." >
                 </div>
                 {% if profile_form.zip.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ profile_form.zip.errors.0 }}
                     </div>
                 
@@ -113,7 +113,7 @@
                     </select>
                 </div>
                 {% if profile_form.userType.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ profile_form.userType.errors.0 }}
                     </div>
                 
@@ -125,7 +125,7 @@
                     <input type="text" class="form-control gradient-input text-light" name="skills" id="skills" placeholder="e.g. Coding, communication etc." >
                 </div>
                 {% if profile_form.skills.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ profile_form.skills.errors.0 }}
                     </div>
                 
@@ -137,7 +137,7 @@
                     <input type="password" class="form-control gradient-input text-light" id="password1" name="password1">
                 </div>
                 {% if profile_form.password1.errors %}
-                    <div class="text-denger">
+                    <div class="text-danger">
                         {{ profile_form.password1.errors.0 }}
                     </div>
                 
@@ -148,12 +148,11 @@
                 <div class="col-sm-9">
                     <input type="password" class="form-control gradient-input text-light" id="password2" name="password2">
                 </div>
-                {% if profile_form.password2.errors %}
-                    <div class="text-denger">
-                        {{ profile_form.password2.errors.0 }}
+                {% for error in profile_form.password2.errors %}
+                    <div class="text-danger">
+                        {{ error }}
                     </div>
-                
-                {% endif %}
+                {% endfor %}
             </div>
             <div class="text-center">
                 <button type="submit" class="btn-outline-warning fw-semibold px-5 py-2 form-control w-auto d-inline-block">Sign Up</button>
