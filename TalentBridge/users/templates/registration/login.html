@@ -6,6 +6,7 @@
     <div class="col-md-5 col-lg-4 p-4 rounded-4 shadow-lg featuredSectioncard1" style="background-color:#1a1a1a" >
 
         {% comment %} <h2 class="text-center mb-4 fw-bold" style="color: #EA2264;">Finance Tracker</h2> {% endcomment %}
+        {{form.errors}}
 
         <form method="post">
             {% csrf_token %}
@@ -18,20 +19,20 @@
             </div>
 
             <div class="mb-3 row">
-                <label for="password1" class="form-label regFormInput fw-semibold col-sm-3">Password:</label>
+                <label for="password" class="form-label regFormInput fw-semibold col-sm-3">Password:</label>
                 <div class="col-sm-9">
-                    <input type="password" class="form-control gradient-input text-light" id="password1" name="password1">
+                    <input type="password" class="form-control gradient-input text-light" id="password" name="password">
                 </div>
             </div>
 
             
 
             <div class="text-center">
-                <button type="submit" class="btn-outline-warning fw-semibold px-5 py-2 form-control w-auto d-inline-block">Sign Up</button>
+                <button type="submit" class="btn-outline-warning fw-semibold px-5 py-2 form-control w-auto d-inline-block">Sign In</button>
             </div>
         </form>
         <div class="text-center mt-3">
-            <p style="color:#fff;">Already have an account? <a href="#" class="text-decoration-none" style="color:#A0D8EF">Sign In</a></p>
+            <p style="color:#fff;">Don't have an account? <a href="{% url 'users:registration' %}" class="text-decoration-none" style="color:#A0D8EF">Sign Up</a></p>
         </div>
     </div>
 </div>

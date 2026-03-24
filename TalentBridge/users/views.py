@@ -25,7 +25,7 @@ def registration(request):
     else:
         user_form = UserRegisterForm()
         profile_form = UserProfileForm()
-    messages.warning(request, "Registration successful!!!")
+    # messages.warning(request, "Registration successful!!!")
     print(user_form.errors, profile_form.errors)
         
     return render(request, "users/registration.html", {'profile_form' : profile_form, 'user_form': user_form})
