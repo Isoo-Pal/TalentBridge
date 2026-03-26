@@ -132,6 +132,6 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-LOGIN_REDIRECT_URL = 'skill-marketplace'
+LOGIN_REDIRECT_URL = 'users:user-profile'
 
 LOGOUT_REDIRECT_URL = 'users:login'

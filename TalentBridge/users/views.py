@@ -30,3 +30,6 @@ def registration(request):
         
     return render(request, "users/registration.html", {'profile_form' : profile_form, 'user_form': user_form})
     # return redirect("users:login")
+
+def UserProfile(request):
+    return render(request, "users/user-profile.html")
