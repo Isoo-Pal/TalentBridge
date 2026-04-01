@@ -256,4 +256,112 @@ select.gradient-input option {
 
 
 /* dashboard */
+.sidebar-container{
+  margin: 0;
+  padding: 0;
+}
 
+/* Sidebar */
+.sidebar{
+    width:250px;
+    height:100vh;
+    position:absolute;
+    background:#161616;
+    border-right:1px solid #2a2a2a;
+}
+
+/* Links */
+.sidebar-link{
+    color:#cfcfcf;
+    padding:12px 15px;
+    border-radius:8px;
+    transition:0.25s;
+}
+
+/* Hover */
+.sidebar-link:hover{
+    background:#2a2a2a;
+    color:#fff;
+}
+
+/* Active item */
+.active-link{
+    background:#343434;
+    color:#fff !important;
+}
+
+.container-right{
+  margin-left: 250px;
+  padding: 30px;
+  width: calc(100% - 250px);
+}
+.welcome-card{
+  background: #101624;
+  border:1px solid #374151;
+  position:relative;
+}
+.summary-card{
+  background: #101624;
+  border:1px solid #374151;
+  position:relative;
+}
+.welcome-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:5px;
+    width:100%;
+    background:linear-gradient(90deg,#A0D8EF,#EBF400);
+    border-radius:8px 8px 0 0;
+}
+.brand-text{
+    color:#0ea5e9;
+    font-weight:700;
+}
+.stats-card{
+  background:#2a394e;
+  border:1px solid #374151;
+  color:#f9fafb;
+}
+.btn-brand{
+    background:linear-gradient(90deg,#A0D8EF,#EBF400);
+    border:none;
+    color:#000;
+    font-weight:600;
+}
+
+.btn-brand:hover{
+    opacity:0.9;
+}
+.quick-main{
+  background: #101624;
+}
+.quick-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:22px;
+    text-decoration:none;
+    border-radius:12px;
+
+    background:#182235;          /* perfect mid-dark */
+    border:1px solid #243044;
+    color:#e6edf3;
+
+    transition:0.25s;
+}
+
+.quick-card i{
+    font-size:26px;
+    color:#A0D8EF;
+}
+
+/* Hover glow using your brand gradient */
+.quick-card:hover{
+    transform:translateY(-5px);
+    border:1px solid #A0D8EF;
+    box-shadow:0 10px 30px rgba(160,216,239,0.15);
+}
