@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 
-h1, h2, h3 {
+h1, h2, h3,h5 {
   color: #EBF400;
   font-family: 'Montserrat', sans-serif;
 }
@@ -21,7 +21,7 @@ button {
 .custom-navbar {
     /* background-color: #EBF400 !important; */
     background: linear-gradient(90deg, #A0D8EF, #EBF400);
-    padding: 10px;
+    padding: 8px;
 }
 
 .upperBody{
